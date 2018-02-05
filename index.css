@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,300,400,400i,500,700,900&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700|Source+Sans+Pro:400,400i,700');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font: inherit; }
+
+b { font-weight: bold; }
+b { padding: 0 0.1rem; }
+b { font-variant: small-caps; }
+b { text-transform: lowercase; }
+p { font-weight: 100; }
+
+a { color: currentcolor; }
+a { font-variant: small-caps; }
+a { text-transform: lowercase; }
+a { font-family: "courier new"; }
+a { font-weight: bold; }
+a { text-decoration: none; }
+a { letter-spacing: -0.05em; }
+a { font-size: 120%; line-height: 1.5rem; }
+
+:root {
+  --h1: white;
+  --issuebg: #1a659e;
+  --background: #e86231;
+  --background: #617;
+  --issuefg: white;
+  --issuebg2: #a36;
+  --issuebg: #396;
+  --articlefg: black;
+  --articlebg: lightsalmon;
+  --articlebg: #ff8559;
+  --articlebg: #30f;
+  --articlebg: rgba(255, 255, 255, 1);
+  --articlefg: black;
+  --sans: Merriweather;
+  --mono: "Source Code Pro";
+}
+
+html { font: 24px/1.5 Merriweather; }
+html { background: var(--background); }
+html { background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); }
+html { background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png"); }
+html { background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); }
+html { background: var(--background); }
+
+.issue { box-shadow: 0px 0px 100px rgba(255, 255, 200, 0.3); }
+.issue:nth-child(even) { transform: rotate(-2deg); }
+.issue:nth-child(odd) { transform: rotate(2deg); }
+.issue { border-radius: 4px; }
+
+body { margin: 2rem auto; max-width: 42rem; }
+body > * { margin-left: 1rem; margin-right: 1rem; }
+
+.issue { padding: 3rem; }
+.issue { background-color: var(--issuebg); }
+.issue:nth-child(2) { background-color: var(--issuebg2); }
+.issue { background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); }
+.issue { color: var(--issuefg); }
+.issue { border: 8px solid var(--articlebg); }
+.issue { margin-bottom: 3rem; }
+
+h1 { text-transform: uppercase; }
+h1 { text-align: center; }
+h1 { font-size: 3rem; margin-right: 2rem; }
+h1, nav { line-height: 3rem; }
+h1 { letter-spacing: 0.03em; }
+h1 { font-weight: 900; }
+h1, nav { font-family: var(--mono); }
+
+h1, nav { color: var(--h1); }
+nav { font-weight: 400; transform: scale(0.9) }
+
+h2 { font-weight: 900; }
+h2 { text-transform: uppercase; }
+h2 { font-size: 1.5rem; line-height: 1.5rem; margin-bottom: 0.75rem; }
+h2 { color: var(--articlebg); }
+h2 { letter-spacing: 0.05em; }
+h2 span { font-size: 60%; font-family: var(--sans); font-weight: 700; }
+h2 span { float: right; }
+h2 span { letter-spacing: 0.07em; }
+
+header { display: flex; }
+ul { list-style-type: none; }
+nav { flex-grow: 1; }
+nav ul { display: flex; }
+nav ul { justify-content: space-around; }
+nav ul { flex-wrap: wrap; }
+
+.issue { margin: 3rem 1.5rem 6rem 1.5rem; }
+body { padding-bottom: 6rem; }
+article:not(:hover) { opacity: 0.8; }
+article { transition: 0.25s ease all; }
+article { cursor: pointer; }
+
+h3 { font-family: var(--sans); font-weight: bold; }
+h4 { font-family: var(--sans); }
+h4 { opacity: 0.8; line-height: 1.5rem; }
+
+article {
+  background: var(--articlebg);
+  padding: 1.5rem;
+  padding: 0.75rem;
+  color: var(--articlefg);
+  border: 1px solid var(--issuebg);
+}
+
+article { flex-grow: 1; }
+article { text-align: center; }
+/* article:nth-child(3n) { width: 100%; } */
+
+.articles {
+  display: flex;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.issue > p { font-family: var(--sans); }
+.issue > p { text-align: justify; }
+
+.about {
+  color: ivory;
+  margin-bottom: 6rem;
+  font-family: var(--mono);
+}
+
+
+p { margin-bottom: 1.5rem; }
